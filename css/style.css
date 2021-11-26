@@ -1,0 +1,30 @@
+/*google font*/
+body {
+	font-family: 'Raleway', sans-serif;
+	background: #C4AE78;
+}
+
+nav {
+	padding: 0.8rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid gray;
+	list-style-type: none;
+}
+
+nav .nav, nav .nav-logo {
+	display: inline;
+	margin: 0.5rem;
+}
+
+a {
+	color: #171515;
+
+}
+
+a:hover {
+	color: #F9F6F0;
+}
+
+a:active {
+	color: #C4AE78;
+}
