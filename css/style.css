@@ -1,8 +1,10 @@
 /*google font*/
 body {
 	font-family: 'Raleway', sans-serif;
-	background: #C4AE78;
+	background: #F9F6F0;
+	color: #6F5B3E;
 }
+
 
 nav {
 	padding: 0.8rem;
@@ -22,9 +24,38 @@ a {
 }
 
 a:hover {
-	color: #F9F6F0;
+	color: #6F5B3E;
 }
 
 a:active {
 	color: #C4AE78;
+}
+
+
+#projects {
+	background: linear-gradient(135deg, #F9F6F0, #6F5B3E);
+	height: 400px;
+}
+
+#projects h2 {
+	color: #171515;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+	font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+   	
+}
+
+#footer {
+	background: linear-gradient(135deg, #F9F6F0, #6F5B3E);
+}
+
+#me img {
+	height: 375px;
+	width: 375px;
 }

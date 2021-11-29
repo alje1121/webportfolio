@@ -15,36 +15,146 @@
 	<title>Alje's Portfolio</title>
 </head>
 <body>
-
-	<div class="d-flex">
+	<!-- top menu -->
+	<div class="d-flex p-2">
             <div class="p-3 mr-auto">
-            	<img src="https://d3ojsfl21hfxhc.cloudfront.net/assets/zuitt/zuittlogo.png">
+            	<!--<img src="https://d3ojsfl21hfxhc.cloudfront.net/assets/zuitt/zuittlogo.png">-->
             </div>
             <div class="d-flex">
-                <div class="p-3">About</div>
-                <div class="p-3">Projects</div>
-                <div class="p-3">Contact</div>
+                <div class="p-3"><a href="#about">About</a></div>
+                <div class="p-3"><a href="#projects">Projects</a></div>
+                <div class="p-3"><a href="#contact">Contact</a></div>
             </div>
     </div>
-
-	<div class="container mt-3 py-3 text-center">
+    <!-- about me -->
+	<div class="container mt-3 py-3 text-center" id="about">
 		<div class="row">
-			<div class="col-md-6">
-				<div>Head</div>
-				<div>Desc</div>
-				<div>Button</div>
+			<div class="col-md-6 justify-content-center">
+				<div>
+					<h1 class="text-left">Hello, I'm Alje. I'm a Freelance Web Developer.</h1>
+				</div>
+				<div>
+					<h5 class="text-left py-2">I specialize in designing websites through WordPress and integrate Search engine Optimization (SEO). Building website is a challenge but getting traffic is more challenging.</h5>
+				</div>
+				<div class="text-left py-2">
+					<button type="button" class="btn btn-outline-warning"><a href="#contact">Let's Talk</a></button>
+				</div>
 			</div>
-			<div class="col-md-6">
-				Image
+			<div class="mt-3 col-md-6 justify-content-center" id="me">
+				<img src="./images/alje-on-wall.jpg" class="rounded-circle img-fluid border-dark border-right">
 			</div>
 		</div>	
 	</div>
+
+	<!-- projects / portfolio / client -->
+	
+	<div class="container-fluid mt-4 py-5" id="projects">
+		<div><h2 class="text-center">Some of the Amazing Clients I've Worked With</h2></div>
+		<div class="d-flex py-3 mt-5">
+			<a class="col-md-3 text-center" href="https://pacifichifi.shop/" target="_blank"><img src="./images/PHF.png" class="img-fluid"></a>
+			<a class="col-md-3 text-center" href="https://timelytechsolutions.com.au/" target="_blank"><img src="./images/TTS.png" class="img-fluid"></a>
+			<a class="col-md-3 text-center" href="https://caronnikole.com/" target="_blank"><img src="./images/CN.png" class="img-fluid"></a>
+			<a class="col-md-3 text-center" href="https://liverpoollionsclub.org.au/" target="_blank"><img src="./images/LIONS.png" class="img-fluid"></a>
+			
+		</div>
+		<div class="d-flex p-2 mt-2">
+			<a class="col-md-3 text-center" href="https://mnlaw.co/" target="_blank"><img src="./images/MN.png" class="img-fluid"></a>
+			<a class="col-md-3 text-center" href="https://topshelfseo.ca/" target="_blank"><img src="./images/TS.png" class="img-fluid"></a>
+			<a class="col-md-3 text-center" href="https://southcan.ca/" target="_blank"><img src="./images/SC.png" class="img-fluid"></a>
+			<a class="col-md-3 text-center" href="https://allweatherexteriors.ca/" target="_blank"><img src="./images/AWE.png" class="img-fluid"></a>
+		</div>
+	</div>
+	
+
+	<!-- contact -->
+	<div class="container mt-3 py-2 text-center">
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="text-left">Services Offered</h3>
+				<ul class="text-left">
+					<li>  Website Design & Development</li>
+					<li>  Custom CSS</li>
+					<li>  Website Maintenance</li>
+					<li>  WordPress WooCommerce</li>
+					<li>  Tracking Codes Installation</li>
+					<li>  Plugin API Integration</li>
+					<li>  Goole Tag Manager</li>
+					<li>  Google Analytics</li>
+					<li>  Google Search Console</li>
+					<li>  Technical SEO</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<h2 class="text-center" id="contact">Let Me Help You Build Your Dream Website</h2>
+				<form>
+					<div class="form-group text-left">
+						<label>Name</label>
+						<input type="name" name="name" class="form-control">
+					</div>
+					<div class="form-group text-left">
+						<label>Email</label>
+						<input type="email" name="email" class="form-control">
+					</div>
+					<div class="form-group text-left">
+						<label>Message</label>
+						<textarea name="form-control" rows="3" class="form-control"></textarea>
+					</div>
+					<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+			<!--  modal start -->
+			<div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class ="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 id="exampleModalLabel" class="modal-title">Thank you!</h5>
+							<button type="button" data-dismiss="modal" aria-label="Close" class="close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="model-body ml-2">
+						I'll respond as soon as I can.
+						</div>
+						<div class="modal-footer">
+								<button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<!-- modal end -->
+
+	<!-- footer -->
+		<footer class="container-fluid p-2 mt-3 text-center" id="footer">
+			<h3 class="text-dark">CONNECT</h3>
+			<!-- social media accounts -->
+			<div>
+				<a href="https://facebook.com/bhadong/" target="_blank" class="mx-2">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+				<a href="https://linkedin.com//in/aljeearl/" target="_blank" class="mx-3">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="https://gitlab.com/alje0919/" target="_blank" class="mx-2">
+					<i class="fab fa-gitlab"></i>
+				</a>
+			</div>
+		</footer>
+	<!-- end of footer -->
+
+
 
 	<!-- js dependencies-->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 	<!-- font awesome -->
-	<script src="https://kit.fontawesome.com/7a46a783b9.js"></script>
+	<!--<script src="https://kit.fontawesome.com/7a46a783b9.js"></script>-->
+	<script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true">
+	</script>
 </body>
 </html>
